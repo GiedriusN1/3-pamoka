@@ -2,13 +2,14 @@ public class Uzduotis_1
 {
    public static void main(String[] args)
    {
-	   int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8};
-	   int i = 0;
-	   int j = 0;
-       int didejantis = 0;
-       int mazejantis = 0;
+      int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8};
+      int i = 0;
+      int j = 0;
+      int didejantis = 0;
+      int mazejantis = 0;
 		   
-	   for (i = 0; i < numbers.length -1; i++) { //atimam 1 kad paskutinio netikrintu nes nebus su kuo
+	   for (i = 0; i < numbers.length -1; i++) { 
+		  //atimam 1 kad paskutinio netikrintu nes nebus su kuo lyginti
 		  /* System.out.println((numbers[i])+1); // kontrolei */
 		  /* System.out.println(numbers[i +1]);	 // kontrolei */   
 		  if (((numbers[i])+1) == numbers[i +1]){ // ziurim ar kitas elementas didesnis vienetu uz einamaji
