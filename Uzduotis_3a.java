@@ -1,4 +1,4 @@
-public class Uzduotis_3
+public class Uzduotis_3a
 {
    public static void main(String[] args)
    {
@@ -6,8 +6,11 @@ public class Uzduotis_3
 	   float b;
 	   // Character op = 'y'; /// nelabai gaunasi su Character tipu
 	   double rez;
+	   boolean na;
 	   
 	   do {
+		  na = false;
+		  try {
 		  System.out.println("\n Iveskite A: "); 
 		  a = Float.valueOf(System.console().readLine());
 		  System.out.println("\n Iveskite B: "); 
@@ -29,8 +32,15 @@ public class Uzduotis_3
 		  case "%": System.out.println("\n" + a + " mod " + b + " = " + ( a % b ));
 		  break;
           default: System.out.println("\n Pasirinkite viena is nurodytu veiksmu"); }
+	    } catch (Exception e) {
+	        System.out.println("Neteisinga reiksme");
+	    }  
 	      System.out.println("\n Ar testi ? Y / N ");
 	     } while ((System.console().readLine()).equals("y"));
+		 
+		 //// bandysim pagauti klaviso Q paspaudima vietoje Y / N tikrinimo
+	 
+		 
   }  
 }
  
