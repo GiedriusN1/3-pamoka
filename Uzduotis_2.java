@@ -16,12 +16,12 @@ public class Uzduotis_2
 	int stulpSumuSuma = 0;
     int[] indeksas = {0, 0};
 
-System.out.println("Duotas masyvas int[][] matrix = {");
-System.out.println("{1, 2, 3, 4, 5},");
-System.out.println("{10, 20, 30, 40, 50},");
-System.out.println("{100, 200, 300, 400, 500}");
-System.out.println("};");
-System.out.println();
+    System.out.println("Duotas masyvas int[][] matrix = {");
+    System.out.println("{1, 2, 3, 4, 5},");
+    System.out.println("{10, 20, 30, 40, 50},");
+    System.out.println("{100, 200, 300, 400, 500}");
+    System.out.println("};");
+    System.out.println();
 
 	for (eil = 0; eil < matrix.length; eil++) { // einam per eilutes
 	    eilSuma = 0; /// nunulinam eilutes elementu suma, kitaip sudes antra prie pirmos ir t.t.
