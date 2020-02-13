@@ -69,7 +69,7 @@ public class Uzduotis_1
 		for (i = 0; i < sequention.length - 2; i += 2) {
 			System.out.print(sequention[i] + ", ");
 		}
-		 System.out.println(sequention[i]); /// paskurini elementa spausdinam be kablelio
+		 System.out.println(sequention[i]); /// paskutini elementa spausdinam be kablelio
 		
   }
 }
