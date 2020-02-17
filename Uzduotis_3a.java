@@ -1,20 +1,31 @@
+/// kalkuliatorius su blogo Inputo apdorojimo Try / Catch
+
 public class Uzduotis_3a
 {
    public static void main(String[] args)
    {
-	   float a;
-	   float b;
-	   // Character op = 'y'; /// nelabai gaunasi su Character tipu
+	   float a = 0;
+	   float b = 0;
+	   // Character op = 'y'; /// nelabai gaunasi su Character tipu, reikia priskyrima padaryti
+	   
 	   double rez;
 	   boolean na;
 	   
 	   do {
-		  na = false;
-		  try {
-		  System.out.println("\n Iveskite A: "); 
-		  a = Float.valueOf(System.console().readLine());
+		// na = false; cia is destytojo pavyzdzio, pas mane nenaudojamas
+		try {
+			  try {
+		          System.out.println("\n Iveskite A: "); 
+				  a = Integer.valueOf(System.console().readLine());
+				  } 
+			   catch (Exception e) {
+				  System.out.println("Neteisinga A reiksme");
+			      }
+			  
+		  
+		  
 		  System.out.println("\n Iveskite B: "); 
-		  b = Float.valueOf(System.console().readLine());
+		  b = Integer.valueOf(System.console().readLine());
 		  
 		  System.out.println("\n Pasirinkite veiksma (*, / , +, -, %) klaviaturoje: ");
           //op = Character.valueOf(System.console().readLine());
@@ -36,7 +47,7 @@ public class Uzduotis_3a
 	        System.out.println("Neteisinga reiksme");
 	    }  
 	      System.out.println("\n Ar testi ? Y / N ");
-	     } while ((System.console().readLine()).equals("y"));
+	    } while ((System.console().readLine()).equals("y"));
 		 
 		 //// bandysim pagauti klaviso Q paspaudima vietoje Y / N tikrinimo
 	 

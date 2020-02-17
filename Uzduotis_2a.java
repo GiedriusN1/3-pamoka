@@ -1,24 +1,22 @@
-public class Uzduotis_2
+public class Uzduotis_2a
 {
-
-   public int find(int[][] matrix, ieskomas) {
-	int eil = o;   
+ public int find(int[][] matrix, int ieskomas) {
+    int eil = 0;   
+    int stulp = 0;
 	for (eil = 0; eil < matrix.length; eil++) { // einam per eilutes
 	      for (stulp = 0; stulp < matrix[eil].length; stulp++) { //einam per eilutes elementus
 			if (matrix[eil][stulp] == ieskomas) {
+                System.out.println("\n ieskoma reiksme yra " + eil + " eiluteje");
 				return eil;
-				indeksas[0] = eil;
-				indeksas[1] = stulp;
 			}
 		}
+    }
+    return eil;
 
-	}
-//	System.out.println("Eilutės " + eil + " elementų suma: " + eilSuma);
-//	eilSumuSuma = eilSumuSuma + eilSuma;
+  }
 
-   }
 
-   public static void main(String[] args)
+public static void main(String[] args)
    {
     int[][] matrix = {
 	{1, 2, 3, 4, 5},
@@ -34,14 +32,9 @@ public class Uzduotis_2
 	int stulpSumuSuma = 0;
 	int ieskomas = 300;
     int[] indeksas = {0, 0};
-	Uzduotis_2 mx =  new Uzduotis_2();
-
-    System.out.println("Duotas masyvas int[][] matrix = {");
-    System.out.println("{1, 2, 3, 4, 5},");
-    System.out.println("{10, 20, 30, 40, 50},");
-    System.out.println("{100, 200, 300, 400, 500}");
-    System.out.println("};");
-    System.out.println();
+    Uzduotis_2a mx =  new Uzduotis_2a(); // 
+    
+   int index = mx.find(matrix, ieskomas); // oblekta priskiriam kintamajam
 
 	for (eil = 0; eil < matrix.length; eil++) { // einam per eilutes
 	    eilSuma = 0; /// nunulinam eilutes elementu suma, kitaip sudes antra prie pirmos ir t.t.
@@ -67,8 +60,8 @@ public class Uzduotis_2
     }
     System.out.println("Visų stulpelių elementų suma yra lygi: " + stulpSumuSuma);
 	
-	System.out.println(); // spausdinam elemento kurio reiksme 300, indeksa
-	System.out.println("Elemento kurio reiksme 300, indeksas yra: [" + indeksas[0] + "][" + indeksas[1] + "]");
+//	System.out.println(); // spausdinam elemento kurio reiksme 300, indeksa
+//	System.out.println("Elemento kurio reiksme 300, indeksas yra: [" + indeksas[0] + "][" + indeksas[1] + "]");
 	
   }
 }
